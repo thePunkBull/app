@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Code Generator and Verifier
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This React application allows users to generate random alphanumeric codes, download them in a JSON file, and verify them using a Merkle tree. The application provides a simple and user-friendly interface for generating codes, creating a Merkle tree, and verifying codes.
 
-## Available Scripts
+## Features
+- **Generate Codes**: Users can generate a specified number of random alphanumeric codes.
+- **Download Codes**: Users can download the generated codes as a JSON file. The JSON file includes additional fields for each code, indicating its availability and associated wallet address.
+- **Create Merkle Tree**: Users can create a Merkle tree from the generated codes, which helps in verifying the authenticity of the codes later.
+- **Verify Codes**: Users can input a code to verify its authenticity against the generated Merkle tree.
 
-In the project directory, you can run:
+## How to Run the Application
+1. Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+2. Clone this repository to your local machine.
+3. Navigate to the project directory in your terminal.
+4. Run `npm install` to install the required dependencies.
+5. Run `npm start` to start the application.
+6. Open your browser and go to [http://localhost:3000](http://localhost:3000) to use the application.
 
-### `npm start`
+## How to Use the Application
+1. **Generate Codes**: Enter the number of codes you want to generate in the input field and click the "Generate Codes" button.
+2. **Download Codes**: After generating the codes, click the "Download Codes" button to download them as a JSON file.
+3. **Create Merkle Tree**: Click the "Generate Merkle Tree" button to create a Merkle tree from the generated codes.
+4. **Verify Codes**: Enter a code in the "Enter code to verify" input field and click the "Verify Code" button to check if the code is valid.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- React
+- MerkleTree (merkletreejs)
+- crypto-js
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+PunkBull
